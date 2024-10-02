@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Artículos para Bebé - Salud Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Salud Online</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    
+    <!-- Menú Lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="libre.html">Venta libre</a>
+                <a href="prescripcion.html">Prescripción</a>
+                <a href="aseo_personal.html">Aseo personal</a>
+                <a href="#.html">Artículos para bebé</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <!-- Contenido de Artículos para Bebé -->
+    <section class="estilo_pag">
+        <div class="container">
+            <br><br>
+            <h2>Artículos para Bebé</h2>
+            <div class="productos">
+
+                <div class="producto">
+                    <img src="img/bebés/pañales.jpeg" alt="Pañales" class="producto-imagen">
+                    <h3>Pañales Desechables</h3>
+                    <p>Máxima absorción y comodidad.</p>
+                    <p>Precio: $150.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Pañales', 110)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/bebés/leche_en_polvo.jpeg" alt="Leche en Polvo" class="producto-imagen">
+                    <h3>Leche en Polvo</h3>
+                    <p>Nutrición completa para tu bebé.</p>
+                    <p>Precio: $250.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Leche en polvo', 250)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/bebés/toallitas.jpeg" alt="Toallitas Húmedas" class="producto-imagen">
+                    <h3>Toallitas Húmedas</h3>
+                    <p>Suaves y delicadas para la piel del bebé.</p>
+                    <p>Precio: $5.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Toallitas húmedas', 50)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/bebés/chupón.jpeg" alt="chupón" class="producto-imagen">
+                    <h3>Chupete</h3>
+                    <p>Con diseño ergonómico y materiales seguros.</p>
+                    <p>Precio: $3.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Chupón', 3)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/bebés/biberón.jpeg" alt="Biberón" class="producto-imagen">
+                    <h3>Biberón Anticólicos</h3>
+                    <p>Diseño que previene cólicos y regurgitaciones.</p>
+                    <p>Precio: $37.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Biberón Anticólicos', 37)">Agregar al Carrito</button>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Venta Libre - Salud Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Salud Online</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#">Venta libre</a>
+                <a href="prescripcion.html">Prescripción</a>
+                <a href="aseo_personal.html">Aseo personal</a>
+                <a href="bebe.html">Artículos para bebé</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <!-- Contenido de Medicamentos de Venta Libre -->
+    <section class="estilo_pag">
+        <div class="container">
+            <br><br>
+            <h2>Medicamentos de Venta Libre</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/libre/portem.jpeg" alt="Paracetamol" class="producto-imagen">
+                    <h3>Paracetamol</h3>
+                    <p>Alivio del dolor y fiebre.</p>
+                    <p>Precio: $10.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Paracetamol', 10)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/libre/gelubrin.jpeg" alt="Ibuprofeno" class="producto-imagen">
+                    <h3>Ibuprofeno</h3>
+                    <p>Anti-inflamatorio y analgésico.</p>
+                    <p>Precio: $12.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Ibuprofeno', 12)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/libre/loratadina.jpeg" alt="Antihistamínico" class="producto-imagen">
+                    <h3>Antihistamínico</h3>
+                    <p>Alivio de alergias.</p>
+                    <p>Precio: $8.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Antihistamínico', 8)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/libre/cobadex.jpg" alt="Jarabe para la tos" class="producto-imagen">
+                    <h3>Jarabe para la tos</h3>
+                    <p>Alivio de la tos seca.</p>
+                    <p>Precio: $15.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Jarabe para la tos', 15)">Agregar al Carrito</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

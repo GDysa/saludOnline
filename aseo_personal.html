@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aseo Personal - Salud Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Salud Online</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    
+    <!-- Menú Lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="libre.html">Venta libre</a>
+                <a href="prescripcion.html">Prescripción</a>
+                <a href="#">Aseo personal</a>
+                <a href="bebe.html">Artículos para bebé</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <!-- Contenido de Productos de Aseo Personal -->
+    <section class="estilo_pag">
+        <div class="container">
+            <br><br>
+            <h2>Productos de Aseo Personal</h2>
+            <div class="productos">
+
+                <div class="producto">
+                    <img src="img/aseo_personal/jabón_líquido.jpeg" alt="Jabón Líquido" class="producto-imagen">
+                    <h3>Jabón Líquido</h3>
+                    <p>Higiene suave para manos y cuerpo.</p>
+                    <p>Precio: $50.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Jabón líquido', 50)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/aseo_personal/shampoo.jpeg" alt="Shampoo" class="producto-imagen">
+                    <h3>Shampoo</h3>
+                    <p>Fórmula nutritiva para todo tipo de cabello.</p>
+                    <p>Precio: $70.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Shampoo', 70)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/aseo_personal/crema_hidratante.jpeg" alt="Crema Hidratante" class="producto-imagen">
+                    <h3>Crema Hidratante</h3>
+                    <p>Hidratación profunda para la piel.</p>
+                    <p>Precio: $100.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Crema hidratante', 100)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/aseo_personal/desodorante.jpeg" alt="Desodorante" class="producto-imagen">
+                    <h3>Desodorante</h3>
+                    <p>Protección duradera contra el mal olor.</p>
+                    <p>Precio: $60.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Desodorante', 60)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/aseo_personal/pasta_de_dientes.jpeg" alt="Pasta de Dientes" class="producto-imagen">
+                    <h3>Pasta de Dientes</h3>
+                    <p>Blanqueamiento y protección para dientes.</p>
+                    <p>Precio: $4.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Pasta de ddientes', 40)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/aseo_personal/gel_antibacterial.jpeg" alt="Gel Antibacterial" class="producto-imagen">
+                    <h3>Gel Antibacterial</h3>
+                    <p>Desinfección eficaz para manos.</p>
+                    <p>Precio: $30.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Gel antibacterial', 30)">Agregar al Carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

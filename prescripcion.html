@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescripción - Salud Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Salud Online</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    
+    <!-- Menú Lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="libre.html">Venta libre</a>
+                <a href="#">Prescripción</a>
+                <a href="aseo_personal.html">Aseo personal</a>
+                <a href="bebe.html">Artículos para bebé</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <!-- Contenido de Medicamentos con Prescripción -->
+    <section class="estilo_pag">
+        <div class="container">
+            <br><br>
+            <h2>Medicamentos con Prescripción</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/prescripción/amoxicilina.jpeg" alt="Amoxicilina" class="producto-imagen">
+                    <h3>Amoxicilina</h3>
+                    <p>Antibiótico de amplio espectro.</p>
+                    <p class="requerido">Se requiere receta médica</p>
+                    <p>Precio: $20.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Amoxicilina', 20)">Agregar al Carrito</button>
+                </div>
+                
+                <div class="producto">
+                    <img src="img/prescripción/ciprofloxacino.png" alt="Ciprofloxacino" class="producto-imagen">
+                    <h3>Ciprofloxacino</h3>
+                    <p>Tratamiento de infecciones bacterianas.</p>
+                    <p class="requerido">Se requiere receta médica</p>
+                    <p>Precio: $25.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Ciprofloxacino', 25)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/prescripción/azitromicina.jpeg" alt="Azitromicina" class="producto-imagen">
+                    <h3>Azitromicina</h3>
+                    <p>Indicado para infecciones respiratorias.</p>
+                    <p class="requerido">Se requiere receta médica</p>
+                    <p>Precio: $30.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Azitromicina', 30)">Agregar al Carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/prescripción/cefalexina.jpeg" alt="Cefalexina" class="producto-imagen">
+                    <h3>Cefalexina</h3>
+                    <p>Antibiótico para infecciones urinarias.</p>
+                    <p class="requerido">Se requiere receta médica</p>
+                    <p>Precio: $22.00</p>
+                    <button class="btn-agregar" onclick="addToCart('Cefalexina', 22)">Agregar al Carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

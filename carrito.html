@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salud Online: Tu farmacia en línea con el mejor servicio y entrega a domicilio.">
+    <title>Carrito de Compras - Salud Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Salud Online</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="#">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    
+    <!-- Menú Lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="libre.html">Venta libre</a>
+                <a href="prescripcion.html">Prescripción</a>
+                <a href="aseo_personal.html">Aseo personal</a>
+                <a href="bebe.html">Artículos para bebé</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <!-- Contenido del Carrito -->
+    <section class="carrito">
+        <div class="container">
+            <br><br>
+            <h2>Tu Carrito de Compras</h2>
+            <div id="lista-carrito" style="text-align: center;"></div>
+            <h3 id="total-carrito" style="text-align: center;"></h3>
+            <button id="btn-pagar" style="display: block; margin: 20px auto;">Pagar</button>
+            <div id="mensaje-compra" style="text-align: center; color: green; margin-top: 10px;"></div>
+        </div>
+    </section>
+
+    <!-- Enlace al archivo externo -->
+    <script src="scripts.js"></script>
+    <script>
+        // Ejecutar la función para mostrar el carrito cuando se carga la página
+        window.onload = function() {
+            displayCart();
+            document.getElementById('btn-pagar').addEventListener('click', completePurchase);
+        }
+    </script>
+</body>
+</html>
