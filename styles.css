@@ -23,7 +23,9 @@
 
 body {
     background: url(img/fondo.jpg);
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -107,14 +109,14 @@ body {
 
 .container-menu {
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    transition: all 500ms ease;
 }
 
 #btn-menu:checked ~ .container-menu {
@@ -123,18 +125,18 @@ body {
 }
 
 .cont-menu {
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
     background: #1c1c1c;
     height: 100vh;
     position: relative;
-    transition: all 500ms ease;
     transform: translateX(-100%);
+    transition: all 500ms ease;
 }
 
 #btn-menu:checked ~ .container-menu .cont-menu {
     transform: translateX(0%);
 }
+
 
 .cont-menu nav {
     transform: translateY(15%);
@@ -317,6 +319,26 @@ body {
 }
 
 #lista-carrito {
+    display: flex;              /* Usa flexbox para centrar contenido */
+    flex-direction: column;      /* Apila los elementos verticalmente */
+    justify-content: center;     /* Centra el contenido verticalmente */
+    align-items: center;         /* Centra el contenido horizontalmente */
+    text-align: left;            /* Alinea el texto a la izquierda */
+    width: 100%;                 /* Ancho completo */
+    min-height: 150px;           /* Altura mínima */
+}
+
+#lista-carrito div {
+    margin-bottom: 10px;         /* Espacio entre los productos */
+    width: 30%;                  /* Ajusta el ancho de cada producto */
+}
+
+#lista-carrito p {
+    font-size: 18px;             /* Tamaño del texto */
+    color: #ffffff;                 /* Color del texto */
+}
+
+#lista-carrito_original {
     text-align: left; /* Alinea el texto a la izquierda */
     width: 100%; /* O puedes definir un ancho específico */
     max-width: 400px; /* Controla el ancho máximo para mantenerlo centrado */
